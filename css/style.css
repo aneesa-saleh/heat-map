@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.x.axis path.domain, .x.axis .tick line {
+  shape-rendering: crispEdges;
+  stroke: gray;
+}
+
+.y.axis .tick line, .y.axis path.domain {
+  stroke: none;
+}
+
+h1, h2, p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 11px;
+}
+
+#chart {
+  margin-top: 5px;
+}
+
+.axis-label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.key-text {
+  font-size: 10px;
+}
+
+.d3-tip {
+  color: white;
+  background-color: rgba(122, 115, 113, 0.9);
+  padding: 5px;
+  border-radius: 5px;
+  width: 150px;
+}
+.d3-tip .year-month {
+  font-size: 14px;
+  margin: 0px;
+}
+.d3-tip .abs-temp {
+  font-size: 13px;
+  margin: 0px;
+}
+.d3-tip .var-temp {
+  font-size: 11px;
+  margin-top: 0px;
+}
+.d3-tip:after, .d3-tip:before {
+  top: 100%;
+  left: 50%;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.d3-tip:after {
+  border: solid transparent;
+  border-top-color: rgba(122, 115, 113, 0.9);
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+rect.bar:hover {
+  opacity: 0.5;
+}
